@@ -28,12 +28,19 @@ header a{
 	border-radius: 15px;
 }
 
+@keyframes nameAnimation{
+	0% {right: 0%; opacity: 0;}
+	100% {right: 5%; opacity: 1;}
+}
+
 #nameDiv{
 	display: block;
 	position: absolute;
-	right: 5%;
 	top: 10%;
 	color: white;
+	animation-name: nameAnimation;
+	animation-duration: 3s;
+	right: 5%;
 }
 
 #nameDiv h1{
