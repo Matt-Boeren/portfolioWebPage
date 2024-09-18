@@ -25,9 +25,9 @@ header a{
 	position: absolute;
 	left: calc(25% + 20px);
 	margin-top: 10px;
-	padding: 5px;
+	padding: 10px;
 	border: 2px solid #000;
-	border-radius: 15px;
+	border-radius: 20px;
 }
 
 @keyframes nameAnimation{

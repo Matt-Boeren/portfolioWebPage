@@ -1,0 +1,39 @@
+#projects{
+	display: flex;
+	justify-content: space-around;
+}
+
+#projects *{
+	margin: 0px;
+}
+
+#projects a {
+	padding: 10px;
+	box-shadow: 2px 2px 2px 2px gray;
+	margin: 10px;
+}
+
+#projects a img{
+	width: 100%;
+	max-width: 350px;
+	max-height: 300px;
+}
+
+#projects a p{
+	margin-left: 0px;
+	text-align: center;
+}
+
+#recentProjects {
+    text-align: center; /* Centers child elements within this container */
+}
+
+#projectButton {
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;  /* Optional: not needed with parent centered text-align */
+}
