@@ -18,6 +18,10 @@ body{
 	border-radius: 20px;
 }
 
+#innerBody *{
+	margin-bottom: 10px;
+}
+
 h2{
 	margin-left: 10px;
 }
@@ -39,7 +43,7 @@ a:focus{
 }
 
 footer{
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	padding-top: 20px;
 	display: flex;
 	justify-content: center;

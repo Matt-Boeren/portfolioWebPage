@@ -2,9 +2,9 @@
   "projects": [
     {
       "id": 0,
-      "title": "LED game console",
+      "title": "Penplotter",
       "images": [
-        "/img/penplotter/jpeg"
+        "/img/penplotter.jpeg"
       ],
       "page": "<p>A penplotter is a 2D drawing machine that can draw shapes.I build mine for my integrated project during my last year of highschool.With building and programming the penplotter I wanted to show what I was capable of doing at that moment.</p><p>When i finnished my integrated project I could connect my computer to the machine and give in a command to draw a basic shape.The shapes my machine could draw were lines, rectangles, circles, ellipses, and circle arcs.</p>"
     }
