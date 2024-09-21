@@ -20,14 +20,9 @@ body{
 
 #innerBody *{
 	margin-bottom: 10px;
+	text-align: center;
 }
 
-h2{
-	margin-left: 10px;
-}
-h3{
-	margin-left: 20px;
-}
 p{
 	margin-left: 30px;
 	margin-right: 30px;

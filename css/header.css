@@ -1,6 +1,6 @@
 header{
 	position: relative;
-	padding-bottom: 10%;
+	padding-bottom: 45px;
 }
 
 #headerIMG{
@@ -47,15 +47,17 @@ header a{
 
 #nameDiv h1{
 	text-decoration: underline;
-
   text-underline-offset: 5px;
 	text-shadow: 2px 2px 2px black;
 	font-size: 30px;
 	margin-bottom: 0px;
+	text-align: left;
 }
 
 #nameDiv h2{
 	margin-left: 0px;
 	text-shadow: 2px 2px 2px black;
 	font-size: 25px;
+	text-align: left;
 }
+

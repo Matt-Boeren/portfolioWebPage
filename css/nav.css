@@ -1,0 +1,37 @@
+nav{
+	background-color: white;
+	position: sticky;
+	top: 0px;
+	z-index: 2;
+	box-shadow: 1px 1px 1px black;
+	display: flex;
+	justify-content: center;
+}
+
+nav a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 5px;
+}
+
+nav a i{
+	font-size: 20px;
+	margin-bottom: 3px;
+	text-decoration: none;
+}
+nav a span{
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.active{
+	text-decoration: underline 3px;
+	text-underline-offset: 9px;
+}

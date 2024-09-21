@@ -1,4 +1,4 @@
-const container = document.getElementById("innerBody");
+const container = document.getElementById("page");
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = parseInt(urlParams.get('id'));
