@@ -1,12 +1,20 @@
 {
   "projects": [
 		{
+			"id": 4,
+			"title": "Minesweeper bot",
+			"images": [
+				"img/minesweeperBot.png"
+			],
+			"page": "<p>The objective of this project is to write a bot that can solve a game of minesweeper. This project is still a work in progress. I have made the game but the bot I am still writing. The bot should work by calculating the probability of all hidden squares of being a bomb. After the calculation the bot would flag the squares with a 100% chance and reveal the square with the least chance and recalculate again. Where I got stuck in the project is the calculation of the probability of the squares.</p><p>The project is written in vanilla javascript with a basic html page with a html canvas.</p>"
+		},
+		{
 			"id": 3,
 			"title": "Sorting algorithm visualiser",
 			"images": [
 				"img/sortingAlgorithm.png"
 			],
-			"page": "sorting algorithm page"
+			"page": "<p>This project is a sorting algorithm visualiser. It shows how different sorting algorithms sort a list visually. The page shows an unsorted list of bars with different lengths. The bars will be sorted based on the algorithm the user chooses.</p><p>The algorithms included are bubble sort, selection sort, insertion sort and quicksort. In the future I might add more algorithms and more statistics like how long the algorithm took.</p><p>The project is written in vanilla javascript with a basic html page with a html canvas.</p>"
 		},
     {
       "id": 2,

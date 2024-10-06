@@ -1,34 +1,40 @@
 #projects{
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
-	align-content: flex-end;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 }
 
 #projects *{
 	margin: 0px;
-	display: inline-block;
+	display:inline-block;
 }
 
 #projects a {
+	margin: 1rem;
 	padding: 5px;
 	box-shadow: 2px 2px 2px 2px gray;
-	margin: 10px;
+	width: 90%;
+	max-width: 350px;
+	height: 350px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
 }
 
 #projects a img{
-	width: 100%;
-	max-height: 350px;
-	max-width: 350px;
+	max-height: 90%;
+	max-width: 95%;
 }
 
 #projects a p{
-	margin-left: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
 	text-align: center;
+	font-size: 1.2rem;
+	font-weight: bold;
 }
 
 #recentProjects {

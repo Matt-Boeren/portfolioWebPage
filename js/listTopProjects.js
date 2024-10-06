@@ -9,7 +9,11 @@ fetch('files/projects.json')
 
     if (Array.isArray(jsonData)) {
       let htmlContent = '';
-      for (let i = 0; i < jsonData.length; i++) {
+			let index = jsonData.length;
+			if(index > 3){
+				index = 3;
+			}
+      for (let i = 0; i < index; i++) {
         const project = jsonData[i];
         const imageUrl = project.images[0] || 'default-image.jpg'; 
 				const altText = project.title || 'No title provided';
