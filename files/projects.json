@@ -1,13 +1,37 @@
 {
   "projects": [
+		{
+			"id": 3,
+			"title": "Sorting algorithm visualiser",
+			"images": [
+				"img/sortingAlgorithm.png"
+			],
+			"page": "sorting algorithm page"
+		},
     {
-      "id": 0,
+      "id": 2,
       "title": "Penplotter",
       "images": [
-        "/img/penplotter.jpeg",
-				"/img/humAndTemp.jpeg"
+        "/img/penplotter.jpeg"
       ],
-      "page": "<p>A penplotter is a 2D drawing machine that can draw shapes.I build mine for my integrated project during my last year of highschool.With building and programming the penplotter I wanted to show what I was capable of doing at that moment.</p><p>When i finnished my integrated project I could connect my computer to the machine and give in a command to draw a basic shape.The shapes my machine could draw were lines, rectangles, circles, ellipses, and circle arcs.</p>"
-    }
+      "page": "<h2>Integrated project</h2><p>A penplotter is a 2D drawing machine that can draw shapes. I build mine for my integrated project during my last year of high school. With building and programming the penplotter I wanted to show what I was capable of doing at that moment.</p><p>When I finished my integrated project I could connect my computer to the machine and give in a command to draw a basic shape. The shapes my machine could draw were lines, rectangles, circles, ellipses, and circle arcs.</p><h3>Read my integrated project</h3><p>To read my integrated project click <a href=\"Integrated_project_penplotter.pdf\">here</a> (in Dutch).</p><h2>Research assignment</h2><p>In my first year of college I had to make a research assignment. I chose to make a drawing application for my penplotter. With the drawing application, the user is able to make a drawing with the basic shapes on a computer before drawing it permanently on something. I programmed the application in the Java environment Processing because a Processing application can easily communicate with an Arduino. An Arduino is the microcontroller I used to build the penplotter.</p><h3>Read my research assignment</h3><p>To read my research assignment click <a href=\"Research_assignment_penplotter.pdf\">here</a>.</p>" 
+		},
+		{
+			"id": 1,
+			"title": "LED gameconsole",
+			"images": [
+				"img/led_gameconsole.jpg",
+				"img/led_gameconsole_on.jpg"
+			],
+			"page": "<p>A LED game console is a LED matrix with a controller. With the controller you can play a game on the matrix. I programmed mine to play the classic game of snake on it.</p><p>I built it in my free time just for fun and to learn. In this project, I learned to work with shift registers. With a shift register, you can control more digital outputs using only three digital outputs of a microcontroller. In this case, the microcontroller used was an Arduino Nano.</p>"
+		},
+		{
+			"id": 0,
+			"title": "Humidity and temperature monnitor",
+			"images": [
+				"img/humAndTemp.jpeg"
+			],
+			"page": "<p>A teacher of mine wanted to know the humidity and temperature over time in the classroom. He wanted to know it because he had a problem with storing bridges made out of spaghetti over a longer period of time.</p><p>So I built a contraption with an Arduino, DHT22 temperature and humidity sensor, a real-time clock, and an SD card module. Every five minutes it makes a measurement, and the measurement is stored on the SD card. After measuring, the data can be plotted in a graph.</p>"
+		}
   ]
 }
