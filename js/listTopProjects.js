@@ -5,7 +5,6 @@ fetch('files/projects.json')
   .then(data => {
     const jsonData = data.projects;
 
-    console.log('Projects Data:', jsonData);
 
     if (Array.isArray(jsonData)) {
       let htmlContent = '';
