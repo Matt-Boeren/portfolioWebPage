@@ -2,7 +2,6 @@ const container = document.getElementById("page");
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = parseInt(urlParams.get('id'));
-console.log(id);
 fetch('files/projects.json')
   .then(response => response.json())
   .then(data => {
@@ -11,11 +10,8 @@ fetch('files/projects.json')
     if (Array.isArray(jsonData)) {
       let htmlContent = ''; // Declare htmlContent once
       for (let i = 0; i < jsonData.length; i++) {
-				console.log(i);
         const project = jsonData[i];
         const projectID = project.id;
-				console.log(id);
-				console.log(projectID); 
         if (id === projectID) {
           const imageUrls = project.images || []; // Ensure imageUrls is defined
           const title = project.title || 'No title provided';
@@ -32,7 +28,6 @@ fetch('files/projects.json')
       }
 
       container.innerHTML = htmlContent;
-      console.log(htmlContent);
     } else {
       console.error('Projects data is not an array:', jsonData);
     }
