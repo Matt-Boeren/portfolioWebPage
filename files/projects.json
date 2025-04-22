@@ -1,5 +1,34 @@
 {
   "projects": [
+		{
+			"id": 6,
+			"title": "Project Xpeditie",
+			"images": [
+				"img/xpeditie.png"
+			],
+			"page": [
+				{
+					"tag": "p",
+					"content": "Project Xpeditie was a fictional web app built for a school project. For this, we built a web app using ASP .NET with Entity Framework."
+				},
+				{
+					"tag": "p",
+					"content": "The application was made to book group vacations. It included user accounts for parents who could manage their children and register them for vacations. Admins could manage users, while responsibles could manage vacations. Each vacation is linked to a destination and associated activities."
+				},
+				{
+					"tag": "p",
+					"content": "Responsibles could also manage payments and the trainings they provide to their monitors. The main monitor of a vacation could view participant details and enter payments made during the vacation."
+				},
+				{
+					"tag": "p",
+					"content": "Regular monitors could access a list of all monitors and follow trainings."
+				},
+				{
+					"tag": "p",
+					"content": "This was a group project where besides using .NET to make a project we also had to use the scrum method and write meeting minutes of it."
+				}
+			]
+		},
     {
       "id": 5,
       "title": "OrangePi Deepseek R1 server",
