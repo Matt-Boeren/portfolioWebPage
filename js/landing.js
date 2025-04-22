@@ -8,26 +8,48 @@ fetch('files/projects.json')
     const jsonData = data.projects;
 
     if (Array.isArray(jsonData)) {
-      let htmlContent = ''; // Declare htmlContent once
       for (let i = 0; i < jsonData.length; i++) {
         const project = jsonData[i];
         const projectID = project.id;
         if (id === projectID) {
-          const imageUrls = project.images || []; // Ensure imageUrls is defined
+          const imageUrls = project.images || [];
           const title = project.title || 'No title provided';
-          const page = project.page || ''; // Ensure page is defined
+          const page = project.page || ''; 
+					const h1 = document.createElement("h1");
 
-          htmlContent += `<h1>${title}</h1>`;
+          h1.textContent = title;
 					document.title = title;
+					container.appendChild(h1);
           for (let j = 0; j < imageUrls.length; j++) {
-            htmlContent += `<img src="${imageUrls[j]}" alt="${title} ${j}">`;
+						const img = document.createElement("img");
+						img.src = imageUrls[j];
+						img.alt = title + " " + j;
+						container.appendChild(img);
           }
-          htmlContent += page;
-          break; // Exit loop once the matching project is found
+					let lastelement = null;
+					for (let j = 0; j < page.length; j++) {
+						const element = document.createElement(page[j].tag);
+						element.textContent = page[j].content;
+
+						if (Object.hasOwn(page[j], 'attributes')) {
+							const attrKeys = Object.keys(page[j].attributes);
+							for (let k = 0; k < attrKeys.length; k++) {
+								const key = attrKeys[k];
+								element.setAttribute(key, page[j].attributes[key]);
+							}
+						}
+						if(Object.hasOwn(page[j], 'parent')){
+							lastelement.appendChild(element);
+						}
+						else{
+							container.appendChild(element);
+							lastelement = element;
+						}
+					}
+          break; 
         }
       }
 
-      container.innerHTML = htmlContent;
     } else {
       console.error('Projects data is not an array:', jsonData);
     }

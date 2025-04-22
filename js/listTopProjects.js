@@ -22,14 +22,21 @@ fetch('files/projects.json')
 					link = 'landingPage.html?id=' + id;
 				}
 
-        htmlContent += `
-					<a href="${link}">
-            <img src="${imageUrl}" alt="${altText}">
-						<p>${project.title}</p>
-					</a>
-        `;
+				const atag = document.createElement('a');
+				atag.href = link;
+				const img = document.createElement('img');
+				img.src = imageUrl;
+				img.alt = altText;
+
+				atag.appendChild(img);
+
+				const ptag = document.createElement('p');
+				ptag.textContent = project.title;
+
+				atag.appendChild(ptag);
+
+				container.appendChild(atag);
       }
-      container.innerHTML = htmlContent;
     } else {
       console.error('Projects data is not an array:', jsonData);
     }

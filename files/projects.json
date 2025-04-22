@@ -1,55 +1,200 @@
 {
   "projects": [
-		{
-			"id": 5,
-			"title": "OrangePi Deepseek R1 server",
-			"images":[
-				"/img/orangepiDeepseek.png"
-			],
-			"page":"<p>So let's get the elephant out of the room I didn't run the Deepseek R1 model that performs like the OpenAI O1 model. This model is also known as the Deepseek R1 671B model. It has 671 billion parameters to work with but a size of 404GB. So if I didn’t use that model, what did I use? Deepseek has distilled versions of this model. This means that they optimized this model to run on lower hardware costs. This goes all the way down to a 1.5B parameter model with a size of only 1.1GB. This is the model I chose to start with because the build was a proof-of-concept for me and not something I would use every day. I also started with this model because I am using very low hardware. It is literally a single-board computer without an external graphics card and a 16GB SD card for memory. Upgrading model and hardware-wise is still plausible. </p> <p> To install the model on the OrangePi, I used Ollama. It was the first time I used it, and I was surprised how easy it was. I got it running out of the box with only two commands. One to install Ollama and one to pull and run the model. So now that I have it running on the OrangePi, how do I use it on my computer? The connection to my computer is made by connecting the OrangePi to my computer with an Ethernet cable and establishing an SSH connection between them. It could also be plausible to plug the board into a local network and SSH into it via the network. Now, I can use the AI model by running the Ollama run command in an SSH terminal session on my computer. This process runs totally offline, so there’s no need to be connected to the internet to use AI models. </p> <h2>Performance</h2> <p> The performance of the model is by no means fast but running on a single board computer also not expected. The answers it gives are very good to me even in the 1.5b model. The model uses chain of thought and that is something you can see very clearly in the responses. I asked it some coding questions you can really see the model think in steps before coding and after explaining how to use the code. This feels very human thinking like. I am very impressed for a 1.1GB model. </p> <h2>My thoughts on Deepseek</h2> <p> I think Deepseek is doing great things by making their AI models open-source and free to use. And it gets even crazier. You can even use their models to implement in your own application and make money with them. Although there is a privacy concern when using their online tools, Deepseek gives you the option to run them locally offline even with a small hardware cost. This is something we have not yet seen from OpenAI. I think AI models need to know your prompts and their responses to learn and improve, but they should not be monitored by people. For example, an AI model can learn from you asking a follow-up question to give a better response to the original question. I think this is a great evolution in AI technologies being more open to the public and free to use, unlike OpenAI's models. I hope this can spark an AI \"space race,\" resulting in even greater, more efficient, and publicly accessible AI technologies. </p> <h2>References</h2> <a href=\"https://ollama.com/library/deepseek-r1:1.5b\">Ollama</a> <a href=\"https://www.youtube.com/watch?v=clJCDHml2cA&t=357s\">Beyond Fireship video</a>"
-		},
-
-
-		{
-			"id": 4,
-			"title": "Minesweeper bot",
-			"images": [
-				"img/minesweeperBot.png"
-			],
-			"page": "<p>The objective of this project is to write a bot that can solve a game of minesweeper. This project is still a work in progress. I have made the game but the bot I am still writing. The bot should work by calculating the probability of all hidden squares of being a bomb. After the calculation the bot would flag the squares with a 100% chance and reveal the square with the least chance and recalculate again. Where I got stuck in the project is the calculation of the probability of the squares.</p><p>The project is written in vanilla javascript with a basic html page with a html canvas.</p>"
-		},
-		{
-			"id": 3,
-			"title": "Sorting algorithm visualiser",
-			"images": [
-				"img/sortingAlgorithm.png"
-			],
-			"page": "<p>This project is a sorting algorithm visualiser. It shows how different sorting algorithms sort a list visually. The page shows an unsorted list of bars with different lengths. The bars will be sorted based on the algorithm the user chooses.</p><p>The algorithms included are bubble sort, selection sort, insertion sort and quicksort. In the future I might add more algorithms and more statistics like how long the algorithm took.</p><p>The project is written in vanilla javascript with a basic html page with a html canvas.</p>"
-		},
+    {
+      "id": 5,
+      "title": "OrangePi Deepseek R1 server",
+      "images": [
+        "/img/orangepiDeepseek.png"
+      ],
+      "page": [
+        {
+          "tag": "p",
+          "content": "So let's get the elephant out of the room I didn't run the Deepseek R1 model that performs like the OpenAI O1 model. This model is also known as the Deepseek R1 671B model. It has 671 billion parameters to work with but a size of 404GB. So if I didn’t use that model, what did I use? Deepseek has distilled versions of this model. This means that they optimized this model to run on lower hardware costs. This goes all the way down to a 1.5B parameter model with a size of only 1.1GB. This is the model I chose to start with because the build was a proof-of-concept for me and not something I would use every day. I also started with this model because I am using very low hardware. It is literally a single-board computer without an external graphics card and a 16GB SD card for memory. Upgrading model and hardware-wise is still plausible."
+        },
+        {
+          "tag": "p",
+          "content": "To install the model on the OrangePi, I used Ollama. It was the first time I used it, and I was surprised how easy it was. I got it running out of the box with only two commands. One to install Ollama and one to pull and run the model. So now that I have it running on the OrangePi, how do I use it on my computer? The connection to my computer is made by connecting the OrangePi to my computer with an Ethernet cable and establishing an SSH connection between them. It could also be plausible to plug the board into a local network and SSH into it via the network. Now, I can use the AI model by running the Ollama run command in an SSH terminal session on my computer. This process runs totally offline, so there’s no need to be connected to the internet to use AI models."
+        },
+        {
+          "tag": "h2",
+          "content": "Performance"
+        },
+        {
+          "tag": "p",
+          "content": "The performance of the model is by no means fast but running on a single board computer also not expected. The answers it gives are very good to me even in the 1.5b model. The model uses chain of thought and that is something you can see very clearly in the responses. I asked it some coding questions you can really see the model think in steps before coding and after explaining how to use the code. This feels very human thinking like. I am very impressed for a 1.1GB model."
+        },
+        {
+          "tag": "h2",
+          "content": "My thoughts on Deepseek"
+        },
+        {
+          "tag": "p",
+          "content": "I think Deepseek is doing great things by making their AI models open-source and free to use. And it gets even crazier. You can even use their models to implement in your own application and make money with them. Although there is a privacy concern when using their online tools, Deepseek gives you the option to run them locally offline even with a small hardware cost. This is something we have not yet seen from OpenAI. I think AI models need to know your prompts and their responses to learn and improve, but they should not be monitored by people. For example, an AI model can learn from you asking a follow-up question to give a better response to the original question. I think this is a great evolution in AI technologies being more open to the public and free to use, unlike OpenAI's models. I hope this can spark an AI \"space race,\" resulting in even greater, more efficient, and publicly accessible AI technologies."
+        },
+        {
+          "tag": "h2",
+          "content": "References"
+        },
+        {
+          "tag": "a",
+          "attributes": {
+            "href": "https://ollama.com/library/deepseek-r1:1.5b"
+          },
+          "content": "Ollama"
+        },
+        {
+          "tag": "a",
+          "attributes": {
+            "href": "https://www.youtube.com/watch?v=clJCDHml2cA&t=357s"
+          },
+          "content": "Beyond Fireship video"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Minesweeper bot",
+      "images": [
+        "img/minesweeperBot.png"
+      ],
+      "page": [
+        {
+          "tag": "p",
+          "content": "The objective of this project is to write a bot that can solve a game of minesweeper. This project is still a work in progress. I have made the game but the bot I am still writing. The bot should work by calculating the probability of all hidden squares of being a bomb. After the calculation the bot would flag the squares with a 100% chance and reveal the square with the least chance and recalculate again. Where I got stuck in the project is the calculation of the probability of the squares."
+        },
+        {
+          "tag": "p",
+          "content": "The project is written in vanilla javascript with a basic html page with a html canvas."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Sorting algorithm visualiser",
+      "images": [
+        "img/sortingAlgorithm.png"
+      ],
+      "page": [
+        {
+          "tag": "p",
+          "content": "This project is a sorting algorithm visualiser. It shows how different sorting algorithms sort a list visually. The page shows an unsorted list of bars with different lengths. The bars will be sorted based on the algorithm the user chooses."
+        },
+        {
+          "tag": "p",
+          "content": "The algorithms included are bubble sort, selection sort, insertion sort and quicksort. In the future I might add more algorithms and more statistics like how long the algorithm took."
+        },
+        {
+          "tag": "p",
+          "content": "The project is written in vanilla javascript with a basic html page with a html canvas."
+        }
+      ]
+    },
     {
       "id": 2,
       "title": "Penplotter",
       "images": [
         "img/penplotter.jpeg"
       ],
-      "page": "<h2>Integrated project</h2><p>A penplotter is a 2D drawing machine that can draw shapes. I build mine for my integrated project during my last year of high school. With building and programming the penplotter I wanted to show what I was capable of doing at that moment.</p><p>When I finished my integrated project I could connect my computer to the machine and give in a command to draw a basic shape. The shapes my machine could draw were lines, rectangles, circles, ellipses, and circle arcs.</p><h3>Read my integrated project</h3><p>To read my integrated project click <a href=\"/files/GIPMattBoeren.pdf\">here</a> (in Dutch).</p><h2>Research assignment</h2><p>In my first year of college I had to make a research assignment. I chose to make a drawing application for my penplotter. With the drawing application, the user is able to make a drawing with the basic shapes on a computer before drawing it permanently on something. I programmed the application in the Java environment Processing because a Processing application can easily communicate with an Arduino. An Arduino is the microcontroller I used to build the penplotter.</p><h3>Read my research assignment</h3><p>To read my research assignment click <a href=\"/files/Research_assignment_Matt_Boeren.pdf\">here</a>.</p>" 
-		},
-		{
-			"id": 1,
-			"title": "LED gameconsole",
-			"images": [
-				"img/led_gameconsole.jpg",
-				"img/led_gameconsole_on.jpg"
-			],
-			"page": "<p>A LED game console is a LED matrix with a controller. With the controller you can play a game on the matrix. I programmed mine to play the classic game of snake on it.</p><p>I built it in my free time just for fun and to learn. In this project, I learned to work with shift registers. With a shift register, you can control more digital outputs using only three digital outputs of a microcontroller. In this case, the microcontroller used was an Arduino Nano.</p>"
-		},
-		{
-			"id": 0,
-			"title": "Humidity and temperature monnitor",
-			"images": [
-				"img/humAndTemp.jpeg"
-			],
-			"page": "<p>A teacher of mine wanted to know the humidity and temperature over time in the classroom. He wanted to know it because he had a problem with storing bridges made out of spaghetti over a longer period of time.</p><p>So I built a contraption with an Arduino, DHT22 temperature and humidity sensor, a real-time clock, and an SD card module. Every five minutes it makes a measurement, and the measurement is stored on the SD card. After measuring, the data can be plotted in a graph.</p>"
-		}
+      "page": [
+        {
+          "tag": "h2",
+          "content": "Integrated project"
+        },
+        {
+          "tag": "p",
+          "content": "A penplotter is a 2D drawing machine that can draw shapes. I build mine for my integrated project during my last year of high school. With building and programming the penplotter I wanted to show what I was capable of doing at that moment."
+        },
+        {
+          "tag": "p",
+          "content": "When I finished my integrated project I could connect my computer to the machine and give in a command to draw a basic shape. The shapes my machine could draw were lines, rectangles, circles, ellipses, and circle arcs."
+        },
+        {
+          "tag": "h3",
+          "content": "Read my integrated project"
+        },
+        {
+          "tag": "p",
+          "content": "To read my integrated project click "
+				},
+				{
+					"tag": "a",
+					"parent": true,
+          "attributes": {
+            "href": "/files/GIPMattBoeren.pdf"
+          },
+          "content": "here"
+        },
+
+				{
+					"tag": "span",
+					"parent": true,
+					"content": "(in dutch)."
+				},
+        {
+          "tag": "h2",
+          "content": "Research assignment"
+        },
+        {
+          "tag": "p",
+          "content": "In my first year of college I had to make a research assignment. I chose to make a drawing application for my penplotter. With the drawing application, the user is able to make a drawing with the basic shapes on a computer before drawing it permanently on something. I programmed the application in the Java environment Processing because a Processing application can easily communicate with an Arduino. An Arduino is the microcontroller I used to build the penplotter."
+        },
+        {
+          "tag": "h3",
+          "content": "Read my research assignment"
+        },
+        {
+          "tag": "p",
+          "content": "To read my research assignment click "
+				},
+				{
+					"tag" : "a",
+					"parent": true,
+          "attributes": {
+            "href": "/files/Research_assignment_Matt_Boeren.pdf"
+          },
+          "content": "here"
+        },
+				{
+					"tag": "span",
+					"parent": true,
+					"content": "."
+				}
+      ]
+    },
+    {
+      "id": 1,
+      "title": "LED gameconsole",
+      "images": [
+        "img/led_gameconsole.jpg",
+        "img/led_gameconsole_on.jpg"
+      ],
+      "page": [
+        {
+          "tag": "p",
+          "content": "A LED game console is a LED matrix with a controller. With the controller you can play a game on the matrix. I programmed mine to play the classic game of snake on it."
+        },
+        {
+          "tag": "p",
+          "content": "I built it in my free time just for fun and to learn. In this project, I learned to work with shift registers. With a shift register, you can control more digital outputs using only three digital outputs of a microcontroller. In this case, the microcontroller used was an Arduino Nano."
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "title": "Humidity and temperature monnitor",
+      "images": [
+        "img/humAndTemp.jpeg"
+      ],
+      "page": [
+        {
+          "tag": "p",
+          "content": "A teacher of mine wanted to know the humidity and temperature over time in the classroom. He wanted to know it because he had a problem with storing bridges made out of spaghetti over a longer period of time."
+        },
+        {
+          "tag": "p",
+          "content": "So I built a contraption with an Arduino, DHT22 temperature and humidity sensor, a real-time clock, and an SD card module. Every five minutes it makes a measurement, and the measurement is stored on the SD card. After measuring, the data can be plotted in a graph."
+        }
+      ]
+    }
   ]
 }
