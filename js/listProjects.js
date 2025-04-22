@@ -6,7 +6,6 @@ fetch('files/projects.json')
     const jsonData = data.projects;
 
     if (Array.isArray(jsonData)) {
-      let htmlContent = '';
       for (let i = 0; i < jsonData.length; i++) {
         const project = jsonData[i];
         const imageUrl = project.images[0] || 'default-image.jpg'; 
@@ -16,15 +15,21 @@ fetch('files/projects.json')
 				if(project.id !== undefined){
 					link = 'landingPage.html?id=' + id;
 				}
+				const atag = document.createElement('a');
+				atag.href = link;
+				const img = document.createElement('img');
+				img.src = imageUrl;
+				img.alt = altText;
 
-        htmlContent += `
-					<a href="${link}">
-            <img src="${imageUrl}" alt="${altText}">
-						<p>${project.title}</p>
-					</a>
-        `;
+				atag.appendChild(img);
+
+				const ptag = document.createElement('p');
+				ptag.textContent = project.title;
+
+				atag.appendChild(ptag);
+
+				container.appendChild(atag);
       }
-      container.innerHTML = htmlContent;
     } else {
       console.error('Projects data is not an array:', jsonData);
     }
