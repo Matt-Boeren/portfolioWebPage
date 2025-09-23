@@ -1,5 +1,31 @@
 {
   "projects": [
+
+        {
+            "id": 7,
+            "title": "Warehouse Application",
+            "images": [
+                "img/whApplication.png"
+            ],
+            "page": [
+                {
+                    "tag": "p",
+                    "content": "Warehouse application is an application written for a company to have a limited layer between their ERP package and their warehouse employees."
+                },
+                {
+                    "tag": "p",
+                    "content": "The application is written to have an easy interface and only shows what the employee needs to see and interact with."
+                },
+                {
+                    "tag": "p",
+                    "content": "It was developed in PHP Laravel, with interactions to the ERP package handled through its API endpoints."
+                },
+                {
+                    "tag": "p",
+                    "content": "This project was the first I did on a freelance basis, while combining it with my studies."
+                }
+            ]
+        },
 		{
 			"id": 6,
 			"title": "Project Xpeditie",
