@@ -2,6 +2,55 @@
   "projects": [
 
         {
+            "id": 8,
+            "title": "Neovim devtools",
+            "images": [
+                "img/nvimDevTools.png"
+            ],
+            "page": [
+                {
+                    "tag": "p",
+                    "content": "All devtools I have made are written for the text editor Neovim, which is an open source alternative to IDEs."
+                },
+                {
+                    "tag": "p",
+                    "content": "Next to being open source it gives you the ability to write your own plugins for it. This is what I used to write my devtools, making use of the programming language Lua."
+                },
+                {
+                    "tag": "h2",
+                    "content": "NvimEmmet"
+                },
+                {
+                    "tag": "p",
+                    "content": "NvimEmmet is a clone of the famous Emmet devtool to write tagged languages faster."
+                },
+                {
+                    "tag": "p",
+                    "content": "The main reason why I wrote it was to learn how Neovim plugins work and to have an Emmet extension with JSX/TSX support for React."
+                },
+                {
+                    "tag": "p",
+                    "content": "It was a good project to learn how plugins interact with the text on screen and how to manipulate that."
+                },
+                {
+                    "tag": "h2",
+                    "content": "ReactToolkit"
+                },
+                {
+                    "tag": "p",
+                    "content": "The React Toolkit is a toolkit to make React components faster."
+                },
+                {
+                    "tag": "p",
+                    "content": "It writes basic templates for React components in a new file."
+                },
+                {
+                    "tag": "p",
+                    "content": "The plugin has support for three types of components: basic components, components with props, and components with children."
+                }
+            ]
+        },
+        {
             "id": 7,
             "title": "Warehouse Application",
             "images": [
