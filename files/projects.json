@@ -1,20 +1,19 @@
 {
-  "projects": [
-
+    "projects": [
         {
             "id": 8,
-            "title": "Neovim devtools",
+            "title": "Neovim Devtools",
             "images": [
                 "img/nvimDevTools.png"
             ],
             "page": [
                 {
                     "tag": "p",
-                    "content": "All devtools I have made are written for the text editor Neovim, which is an open source alternative to IDEs."
+                    "content": "All developer tools I have built are written as plugins for Neovim, an open-source text editor often used as an alternative to full IDEs."
                 },
                 {
                     "tag": "p",
-                    "content": "Next to being open source it gives you the ability to write your own plugins for it. This is what I used to write my devtools, making use of the programming language Lua."
+                    "content": "Neovim not only provides flexibility and speed, but also allows developers to extend its functionality by writing custom plugins. I created my tools using Lua, the scripting language supported by Neovim."
                 },
                 {
                     "tag": "h2",
@@ -22,15 +21,15 @@
                 },
                 {
                     "tag": "p",
-                    "content": "NvimEmmet is a clone of the famous Emmet devtool to write tagged languages faster."
+                    "content": "NvimEmmet is a custom implementation of the popular Emmet toolkit, designed to help developers write markup-based languages such as HTML and XML much faster."
                 },
                 {
                     "tag": "p",
-                    "content": "The main reason why I wrote it was to learn how Neovim plugins work and to have an Emmet extension with JSX/TSX support for React."
+                    "content": "I built it primarily to learn Neovim plugin development, while also providing JSX/TSX support for React, which was missing in other extensions."
                 },
                 {
                     "tag": "p",
-                    "content": "It was a good project to learn how plugins interact with the text on screen and how to manipulate that."
+                    "content": "This project gave me valuable experience in understanding how Neovim plugins interact with the editor buffer and how to manipulate text directly on screen."
                 },
                 {
                     "tag": "h2",
@@ -38,15 +37,15 @@
                 },
                 {
                     "tag": "p",
-                    "content": "The React Toolkit is a toolkit to make React components faster."
+                    "content": "The React Toolkit plugin is designed to accelerate React development by generating boilerplate code for new components."
                 },
                 {
                     "tag": "p",
-                    "content": "It writes basic templates for React components in a new file."
+                    "content": "It automatically creates new files with ready-to-use templates and supports three types of components: basic components, components with props, and components with children."
                 },
                 {
                     "tag": "p",
-                    "content": "The plugin has support for three types of components: basic components, components with props, and components with children."
+                    "content": "Through this project, I deepened my knowledge of code generation, templating, and workflow automation inside Neovim."
                 }
             ]
         },
@@ -59,19 +58,19 @@
             "page": [
                 {
                     "tag": "p",
-                    "content": "Warehouse application is an application written for a company to have a limited layer between their ERP package and their warehouse employees."
+                    "content": "Developed a custom warehouse application designed to serve as a streamlined interface between the company’s ERP system and warehouse employees."
                 },
                 {
                     "tag": "p",
-                    "content": "The application is written to have an easy interface and only shows what the employee needs to see and interact with."
+                    "content": "The application provided a simple, user-friendly interface that displayed only the information necessary for daily warehouse operations, improving efficiency and reducing complexity."
                 },
                 {
                     "tag": "p",
-                    "content": "It was developed in PHP Laravel, with interactions to the ERP package handled through its API endpoints."
+                    "content": "Built from scratch using PHP Laravel, with all data and process interactions handled through the ERP’s API endpoints."
                 },
                 {
                     "tag": "p",
-                    "content": "This project was the first I did on a freelance basis, while combining it with my studies."
+                    "content": "The project covered the full development lifecycle from developing it from scratch to finding and setting up a cost efficient hosting service while I successfully combined it with my studies."
                 }
             ]
         },
