@@ -1,7 +1,37 @@
 {
     "projects": [
         {
-            "id": 8,
+            "id": 10,
+            "title": "Internship Timesheets - PeopleWare",
+            "professional": true,
+            "images": [
+                "img/internship.png"
+            ],
+            "page": [
+                {
+                    "tag": "p",
+                    "content": "Technologies: .NET backend with a PostgreSQL database, and an Angular frontend."
+                },
+                {
+                    "tag": "p",
+                    "content": "This project involved extending an existing time-tracking application to make its workflow more automated and efficient."
+                },
+                {
+                    "tag": "p",
+                    "content": "One of the key additions was an automated invoicing module that generates invoices each month based on a CSV file, removing the need for manual invoice creation."
+                },
+                {
+                    "tag": "p",
+                    "content": "Another major feature was the integration of absence data from the company's external payroll and HR provider. This allows employees to register their absences in a single place, eliminating duplicate data entry and reducing the amount of manual verification needed at the end of each month."
+                },
+                {
+                    "tag": "p",
+                    "content": "Using this imported absence data, the system also runs automatic monthly validations, for example, checking that every employee has logged all their required hours on the correct days."
+                }
+            ]
+        },
+        {
+            "id": 9,
             "title": "Neovim Devtools",
             "professional": false,
             "images": [
@@ -47,6 +77,32 @@
                 {
                     "tag": "p",
                     "content": "Through this project, I deepened my knowledge of code generation, templating, and workflow automation inside Neovim."
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "title": "Unity games",
+            "professional": false,
+            "images": [
+                "img/unityGames.png"
+            ],
+            "page": [
+                {
+                    "tag": "p",
+                    "content": "I made the games to learn how to work with unity. This can come in handy in the future for 3D renders and working with VR or AR."
+                },
+                {
+                    "tag": "p",
+                    "content": "The games I made were a clone of the classic pong game and a 2D racer in the style of back to the future."
+                },
+                {
+                    "tag": "p",
+                    "content": "Graphical features were done via the unity editor and scripts were written in C#."
+                },
+                {
+                    "tag": "p",
+                    "content": "In the 2D racer there is usage of collisions, player inputs through the keyboard, levels and powerups."
                 }
             ]
         },
